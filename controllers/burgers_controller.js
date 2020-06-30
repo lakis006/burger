@@ -12,12 +12,12 @@ router.get("/", function (req, res) {
 });
 
 router.put("/burgers", function (req, res) {
-    mainFunctions.insertOne([], function (input) {
+    mainFunctions.updateOne([], function (input) {
     });
 });
 
 router.post("/burgers", function (req, res) {
-    burger.updateOne([], function (input) {
+    mainFunctions.insertOne([], function (input) {
     });
 });
 
