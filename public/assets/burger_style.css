@@ -1,0 +1,15 @@
+body,pre{
+    background-color: #F6B096;
+    color: #AE292A;
+}
+
+#burger-img {
+    width: 100px;
+    height:100px;
+}
+
+@media only screen and (max-width: 650px) {
+    .devourbtn{
+        width:50% !important;
+    }
+}
