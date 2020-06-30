@@ -1,0 +1,27 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "This app will Eat-Da-Burger",
+  "main": "index.js",
+  "scripts": {
+    "test": "run this test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakis006/burger.git"
+  },
+  "keywords": [
+    "love"
+  ],
+  "author": "Jamal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakis006/burger/issues"
+  },
+  "homepage": "https://github.com/lakis006/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
