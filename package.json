@@ -2,7 +2,7 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "This app will Eat-Da-Burger",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "run this test "
   },
