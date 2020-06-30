@@ -6,3 +6,5 @@ VALUES
 ("Juicey Lucy", TRUE),
 ("Tofu", FALSE),
 ("Steak", TRUE);
+
+SELECT * FROM burgers;
