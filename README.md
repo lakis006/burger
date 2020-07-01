@@ -6,6 +6,6 @@ This is a application that requires the use of Full Stack items such as Node, Ex
 
 ## Deployment
 
-This app is deployed live on Heroku here: 
+This app is deployed live on Heroku here: https://burger-sql.herokuapp.com/
 
 ## Screenshots
