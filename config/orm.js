@@ -5,10 +5,13 @@ var tableName = "burgers";
 var orm = {
     selectAll: function(cb) {
         var s = "SELECT * FROM" +  tableName;
-
-        connection.query(s, function(err, result) {
-            cb(result);
-        });
+        cb = function() {
+            connection.query(s, function(err, result) {
+                return result;
+            });
+        }
+        
+        return cb;
     },
 
 
@@ -16,20 +19,25 @@ var orm = {
     insertOne: function(insert, cb) {
         var s = "INSERT INTO " + tableName + " (text, complete) VALUES (?,?)";
         insert.complete = insert.complete || 0;
-        connection.query(s, [insert.text, insert.complete], function(err, result) {
-            cb(result)
-        });
+        cb = function() {
+            connection.query(s, [insert.text, insert.complete], function(err, result) {
+                return result;
+            });
+        }
+        return cb;
     },
 
 
     updateOne: function(insert, cb) {
         var s = "UPDATE " + tableName + " SET text=? WHERE id=?";
-
-        connection.query(s, [
-            insert.text, insert.id
-        ], function(err, result) {
-            cb(result)
-        });
+        cb = function() {
+            connection.query(s, [
+                insert.text, insert.id
+            ], function(err, result) {
+                return result;
+            });
+        }
+        return cb;
     }
 
 };
