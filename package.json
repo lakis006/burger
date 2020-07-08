@@ -1,29 +1,19 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "This app will Eat-Da-Burger",
-  "main": "server.js",
+  "description": "burger tracker",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lakis006/burger.git"
-  },
-  "keywords": [
-    "love"
-  ],
-  "author": "Jamal",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lakis006/burger/issues"
-  },
-  "homepage": "https://github.com/lakis006/burger#readme",
   "dependencies": {
-    "connection.js": "0.0.2",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
+    "handlebars": "^4.7.6",
+    "method-override": "^3.0.0",
     "mysql": "^2.18.1"
   }
 }
